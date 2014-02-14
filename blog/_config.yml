@@ -1,0 +1,4 @@
+name: Lifesum Tech Blog
+markdown: redcarpet
+pygments: true
+baseurl: /blog
