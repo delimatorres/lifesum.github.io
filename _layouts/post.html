@@ -1,9 +1,23 @@
 ---
 layout: default
 ---
+<div class="single_post">
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+
+<span class="meta">{{ page.date | date_to_string }} 
+
+	{% if page.author_url %}
+		&#8226; By: <a href="{{ page.author_url }}" target="__blank"> {{ page.author }} </a>  
+	{% else %} 
+		{% if page.author %}
+		&#8226; By: {{ page.author }} 
+		{% endif %}
+	{% endif %}
+
+</span>
 
 <div class="post">
 {{ content }}
+</div>
+
 </div>
