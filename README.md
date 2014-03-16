@@ -39,7 +39,7 @@ Create new post and open in editor
 thor jekyll:new The title of the new post --editor=vim
 ```
 
-## Optional is to put author and author_url in the post header 
+### Optional is to put author and author_url in the post header 
 ```
 ---
 layout: post
