@@ -2,7 +2,7 @@
 layout: post
 title:  "Our Platform"
 date:   2014-04-07 15:40:42
-categories: architecture platform
+categories: architecture
 author: "Nicolas Grasset"
 ---
 
@@ -75,4 +75,4 @@ We are currently only deployed in one region (Ireland) since our users are mostl
 ![Lifesum platform]({{ site.url }}/assets/infrastructure-2014.jpg)
 
 
-We are looking for new talents to help us make this stack better, so checkout our openings: http://jobs.lifesum.com/jobs
+We are looking for new talents to help us make this stack better, so checkout our openings: [http://jobs.lifesum.com/jobs]
