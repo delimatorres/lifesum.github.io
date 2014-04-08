@@ -19,12 +19,13 @@ title: Lifesum Engineering
        	 		&#8226; By: {{ post.author }} 
        	 		{% endif %}
    	 		{% endif %}
-
-        <a href="{{ post.url }}#disqus_thread">Link</a>.
+        &#8226;
+        <a class="comment_post" href="{{ post.url }}#disqus_thread">Add Comment</a>.
 
    	 	</span>
        	 {{ post.content }}
-
+         <div class="end_of_post_sep"></div>
+         <a class="comment_post styled_button" href="{{ post.url }}#disqus_thread">Add Comment</a>
   		</li>
     {% endfor %}
   </ul>

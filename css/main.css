@@ -98,16 +98,47 @@ a{}
 a:hover{}
 p small{}
 
-.posts .post ul{
+.posts .post ul, .single_post ul{
   margin-left: 14px;
 }
-.posts .post ul li{
+.posts .post ul li, .single_post ul li{
   color: #505050;
   padding: 0 0 13px 0;
   margin: 0;
   line-height: 23px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.comment_post{
+  color: #889E2E;
+  text-decoration: none;
+}
+
+.comment_post.styled_button{
+    font-size: 10px;
+  text-transform: uppercase;
+  color: #555555;
+  border: 1px solid rgb(117, 117, 117);
+  padding: 9px 28px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  line-height: 1;
+  transition: all 0.7s;
+}
+
+.comment_post.styled_button:hover{
+  background: rgb(117, 117, 117);
+  border-color: #FFF;
+  color: #FFF;
+}
+
+.end_of_post_sep{
+  height: 1px;
+  background: #eee;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /*****************************************************************************/
@@ -117,17 +148,17 @@ p small{}
 /*****************************************************************************/
 .posts {
   list-style-type: none;
-  margin-bottom: 2em;
+  margin-bottom: 0px;
 }
 
 .posts li {
   line-height: 1.75em;
   padding: 0 0 40px 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 0px 0;
 }
 
 .post h3{}
-.post h3 a{
+.post h3 a, .single_post h2{
   font-size: 29px;
   color: #505050;
   text-decoration: none;
@@ -156,28 +187,7 @@ p small{}
   -moz-border-radius: 2px;
 }
 
-/* Single post item */
-.single_post .meta{
-    color: #BDBDBD;
-}
 
-.single_post .meta a{
-    color: #b3d03c;
-}
-
-.single_post h2{
-  font-size: 30px;
-  color: #4B4B4B;
-  font-weight: 400;
-  text-decoration: none;
-  margin: 0 0 8px 0;
-  display: block;
-  padding: 0 0 12px 0;
-}
-
-.single_post p a{
-      color: #b3d03c;
-}
 
 .post_header{
     height: 90px;
@@ -188,7 +198,6 @@ p small{}
 
 .post_header h1{
     text-align: center;
-  
     font-size: 36px;
     line-height: 90px;
     color: #7C7C7C;
@@ -265,7 +274,7 @@ html{
   font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
-  margin-top: 2em;
+  margin-top: 0;
   overflow: hidden;
   padding-top: 20px;
 }
