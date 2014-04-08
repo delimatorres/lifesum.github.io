@@ -1,12 +1,9 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Lifesum Engineering
 ---
 
 <div id="home">
-  <section class="post_header">
-  	<h1>Latest Posts</h1>
-  </section>
   <ul class="posts">
     {% for post in site.posts %}
       <li class="post">
@@ -24,10 +21,7 @@ title: Your New Jekyll Site
    	 		{% endif %}
 
    	 	</span>
-       	 {{ post.excerpt }}
-
-       	 <a href="{{ post.url }}" class="post_read_more">Read More</a>
-
+       	 {{ post.content }}
   		</li>
     {% endfor %}
   </ul>
