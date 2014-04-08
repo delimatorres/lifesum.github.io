@@ -39,7 +39,15 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
-h1,h2,h3,h4,h5,h6{}
+h1,h2,h3,h4,h5,h6, p, li{
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #505050;
+  padding-top: 12px;
+  line-height: 1em;
+}
   
 h1{
   font-size: 25px;
@@ -47,16 +55,27 @@ h1{
   color: #4B4B4B;
 }  
 
+
 p{
   color: #505050;
-  padding: 0 0;
-  margin: 0 0;
   font-size: 14px;
   line-height: 29px;
 }
 a{}
 a:hover{}
 p small{}
+
+.posts .post ul{
+  margin-left: 14px;
+}
+.posts .post ul li{
+  color: #505050;
+  padding: 0 0 13px 0;
+  margin: 0;
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 /*****************************************************************************/
 /*
@@ -162,7 +181,7 @@ html{
   font-size: 115%;
   text-align: justify;
   width: 740px;
-  margin: 2em auto 2em;
+  margin: 1em auto 2em;
   line-height: 1.5em;
 }
 
