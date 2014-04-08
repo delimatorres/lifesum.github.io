@@ -75,4 +75,4 @@ We are currently only deployed in one region (Ireland) since our users are mostl
 ![Lifesum platform]({{ site.url }}/assets/infrastructure-2014.jpg)
 
 
-We are looking for new talents to help us make this stack better, so checkout our openings: [http://jobs.lifesum.com/jobs]
+We are looking for new talents to help us make this stack better, so checkout our openings: [http://jobs.lifesum.com/jobs](http://jobs.lifesum.com/jobs)
