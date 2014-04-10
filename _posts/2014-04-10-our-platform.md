@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our Platform"
-date:   2014-04-07 15:40:42
+date:   2014-04-10 08:59:42
 categories: architecture
 author: "Nicolas Grasset"
 ---
