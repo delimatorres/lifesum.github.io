@@ -16,7 +16,7 @@ First off, we had to upgrade our backend. Built on ASP/C# .NET, the code was not
 
 ### Ubuntu
 
-First off, Windows servers just isn't supported the same way by the open source community, so we wanted to move to Linux with Ubuntu. Whether it is caching libraries, database connectors, MQ solutions or OAuth libaries, .NET is simply not as much on the forefront of development as Python, Ruby or PHP.
+First off, Windows servers just isn't supported the same way by the open source community, so we wanted to move to Linux with Ubuntu. Whether it is caching libraries, database connectors, MQ solutions or OAuth libraries, .NET is simply not as much on the forefront of development than Python, Ruby or PHP.
 
 We switched to Ubuntu LTS versions, trying to keep the same setup for all instances, making it easier to administrate production servers. Not all services need the same type of instances, but they all run Ubuntu very well.
 
@@ -32,7 +32,7 @@ The main reassuring factor for this choice was our location: Stockholm is a Pyth
 
 ### Django
 
-Finally, while framework often add a lot of unnecessary noise to your code, I decided I (being alone on the backend then) was too novice in Python to re-invent the wheel, and Django was already powering Instagram and my friends at FundedByMe as well as many other great services.
+Finally, while frameworks often add a lot of unnecessary noise to your code, I decided I (being alone on the backend then) was too novice in Python to re-invent the wheel, and Django was already powering Instagram and my friends at FundedByMe as well as many other great services.
 
 Django comes with a good DB support with an efficient ORM (which can also be replaced by arguably better ones), a good framework structure close to MVC and a killer-feature: the Django Admin. With built-in support for cache backends, DB, web templates and user authentication, I thought we could always extend it to simplify later with more experience, but it'd be a great tool to start with. It was!
 
@@ -60,7 +60,7 @@ All tasks, API, website and management commands run in the same app. This way we
 
 Amazon Web Services are the engineer we did not hire in our team! With EC2 and auto-scaling, our application adapts to the amount of users at any given time of the day, and self-repair in case of hardware failure. Here is a breakdown of the services we use:
 
-* EC2 - Production instances auto-scaling every hour. They can go live within 30sec, and will wait 20min to shut down
+* EC2 - Production instances auto-scaling every hour. They can go live within 90 seconds, and will wait 20min to shut down
 * Elastic Load Balancer - This simple service is facing the world and acting as a simple load balancer
 * Redis on Elasticache - Caching makes most applications faster. We cache at the application level on a Redis cluster for better fail-over
 * MySQL on RDS - Less common than PostGres, we use our legacy MySQL because it works; RDS manages backup, upgrades and fail-over.
